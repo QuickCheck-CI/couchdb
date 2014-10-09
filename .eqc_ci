@@ -1,1 +1,6 @@
-{build, "./configure ; make "}.
+{build, "./configure ; make ; cd test/eqc/ebin/ ; erl -make "}.
+{test_path, "test/eqc/ebin"}.
+{deps, "src/couch/ebin"}.
+{deps, "src/couch_stats/ebin"}.
+{deps, "src/snappy/ebin"}.
+{deps, "src/ioq/ebin"}.

@@ -23,7 +23,7 @@ compile: config.erl
 	@cp src/couch/priv/couchjs bin/
 
 clean:
-	@rebar -r clean
+	@rebar clean
 
 check: javascript eunit
 
